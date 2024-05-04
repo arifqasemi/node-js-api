@@ -35,4 +35,7 @@ app.use(multer({storage:fileStorage,fileFilter:filter}).single('image'))
 app.use(router)
 
 
-app.listen(8181)
+const PORT = process.env.PORT || 3000; 
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
