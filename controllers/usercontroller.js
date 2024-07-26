@@ -5,7 +5,7 @@ class UserController{
 
 
     get(req,res){
-        res.send('hello from node')
+        res.send('hello from node.')
     }
 
     post(req,res){

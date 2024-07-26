@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('./router/router');
+const router = require('../router/router');
 const multer = require('multer');
 const path = require('path');
 
