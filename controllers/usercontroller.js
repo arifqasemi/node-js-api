@@ -4,7 +4,9 @@ class UserController{
     constructor(){}
 
 
-    get(){}
+    get(req,res){
+        res.send('hello from node')
+    }
 
     post(req,res){
         User.findOne({where:{email:req.body.email}}).then((result) =>{
